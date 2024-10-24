@@ -91,10 +91,10 @@ function Dashboard() {
 
       {/* Logs and Requests Buttons */}
       <Grid item xs={12} style={{ textAlign: 'center', marginTop: '20px' }}>
-        <Link to="/log" style={{ textDecoration: 'none', marginRight: '10px' }}>
+        <Link to="/api/log" style={{ textDecoration: 'none', marginRight: '10px' }}>
           <Button variant="contained" color="primary">View Logs</Button>
         </Link>
-        <Link to="/requests" style={{ textDecoration: 'none' }}>
+        <Link to="/api/requests" style={{ textDecoration: 'none' }}>
           <Button variant="contained" color="secondary">View Requests</Button>
         </Link>
       </Grid>
