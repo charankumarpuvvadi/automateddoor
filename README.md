@@ -1,1 +1,1 @@
-Web Application for Door LOck Automation
+Web Application for Door Lock Automation
