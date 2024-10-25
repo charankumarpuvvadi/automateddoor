@@ -22,7 +22,7 @@ const Requests = () => {
  const handleAccept = async (code) => {
   try {
     // Corrected endpoint
-    await axios.post('/api/requests/accept', { code });
+    await axios.post('/api/requestsAccept', { code });
     console.log('Request accepted:', code);
     fetchRequests(); // Refresh the list of requests after accepting
   } catch (error) {
