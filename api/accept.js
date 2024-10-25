@@ -11,6 +11,8 @@ const Log = require("./models/Log"); // Adjust the path as needed
 router.post("/", async (req, res) => {
   const { code } = req.body;
 
+
+  
   try {
     // Find the request by its code
     const request = await Request.findOne({ code });
