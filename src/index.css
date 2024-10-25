@@ -1,0 +1,150 @@
+/* Global reset for margin, padding, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* A clean sans-serif font */
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Slightly increased line-height for readability */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+    color: #2c3e50; /* Slightly dark blue for headings */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db; /* Primary blue color for links */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+  
+  /* Styling for AppBar */
+  .MuiAppBar-root {
+    background-color: #34495e !important; /* Dark navy color for AppBar */
+  }
+  
+  .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .MuiTypography-h6 {
+    font-weight: bold !important;
+    color: white !important;
+  }
+  
+  /* Paper component styling */
+  .MuiPaper-root {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px;
+  }
+  
+  /* Typography */
+  .MuiTypography-h5 {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .MuiTypography-body1 {
+    color: #7f8c8d;
+  }
+  
+  /* Button styling */
+  .MuiButton-containedPrimary {
+    background-color: #3498db !important; /* Primary button color */
+  }
+  
+  .MuiButton-containedPrimary:hover {
+    background-color: #2980b9 !important; /* Darken on hover */
+  }
+  
+  /* Grid container and item styling */
+  .MuiGrid-container {
+    margin-top: 20px;
+  }
+  
+  .MuiGrid-item {
+    padding: 10px;
+  }
+  
+  /* TextField styling */
+  .MuiTextField-root {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* AccessLogs component */
+  .access-logs {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .MuiListItem-root {
+    border-bottom: 1px solid #ecf0f1; /* Light border between logs */
+  }
+  
+  .MuiListItemText-primary {
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .MuiListItemText-secondary {
+    color: #7f8c8d;
+  }
+  
+  /* Responsiveness for mobile devices */
+  @media (max-width: 768px) {
+    .MuiGrid-item {
+      width: 100%; /* Full width on smaller screens */
+      padding: 0;
+    }
+  
+    .MuiPaper-root {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .MuiTypography-h5 {
+      font-size: 1.25rem; /* Slightly smaller headings on mobile */
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  }
+  
